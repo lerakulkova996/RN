@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="67">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<InputField name="ОтчетныйПериодС" id="7">
+					<DataPath>Объект.ОтчетныйПериодС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчетный период с</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтчетныйПериодСКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОтчетныйПериодСРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ОтчетныйПериодПо" id="10">
+					<DataPath>Объект.ОтчетныйПериодПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтчетныйПериодПоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОтчетныйПериодПоРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТабличныеЗначения" id="25">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабличныеЗначения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличныеЗначенияКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ТабличныеЗначенияКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ТабличныеЗначенияРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ТабличныеЗначенияСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ТабличныеЗначения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличныеЗначенияСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТабличныеЗначенияСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличныеЗначенияСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ТабличныеЗначения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличныеЗначенияСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТабличныеЗначенияСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличныеЗначенияУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ТабличныеЗначения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличныеЗначенияУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ТабличныеЗначенияУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">ТабличныеЗначенияПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТабличныеЗначенияНомерСтроки" id="38">
+					<DataPath>Объект.ТабличныеЗначения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабличныеЗначенияНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ТабличныеЗначенияТабельныйНомер" id="41">
+					<DataPath>Объект.ТабличныеЗначения.ТабельныйНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияТабельныйНомерКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабличныеЗначенияТабельныйНомерРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТабличныеЗначенияФИО" id="44">
+					<DataPath>Объект.ТабличныеЗначения.ФИО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияФИОКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабличныеЗначенияФИОРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ТабличныеЗначенияДолжность" id="47">
+					<DataPath>Объект.ТабличныеЗначения.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияДолжностьКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТабличныеЗначенияДолжностьРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ТабличныеЗначенияОклад" id="50">
+					<DataPath>Объект.ТабличныеЗначения.Оклад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияОкладКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТабличныеЗначенияОкладРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияОкладПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличныеЗначенияОтработаноЧасов" id="53">
+					<DataPath>Объект.ТабличныеЗначения.ОтработаноЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияОтработаноЧасовКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТабличныеЗначенияОтработаноЧасовРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияОтработаноЧасовПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличныеЗначенияНачисленоВсего" id="56">
+					<DataPath>Объект.ТабличныеЗначения.НачисленоВсего</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияНачисленоВсегоКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТабличныеЗначенияНачисленоВсегоРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияНачисленоВсегоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличныеЗначенияУдержаноНДФЛ" id="59">
+					<DataPath>Объект.ТабличныеЗначения.УдержаноНДФЛ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияУдержаноНДФЛКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТабличныеЗначенияУдержаноНДФЛРасширеннаяПодсказка" id="61"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияУдержаноНДФЛПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличныеЗначенияСуммаКВыплате" id="62">
+					<DataPath>Объект.ТабличныеЗначения.СуммаКВыплате</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличныеЗначенияСуммаКВыплатеКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТабличныеЗначенияСуммаКВыплатеРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="65">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<InputField name="ОтработаноЧасов" id="13">
+					<DataPath>Объект.ОтработаноЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтработаноЧасовКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтработаноЧасовРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачисленоВсего" id="16">
+					<DataPath>Объект.НачисленоВсего</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленоВсегоКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НачисленоВсегоРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="УдержаноНДФЛ" id="19">
+					<DataPath>Объект.УдержаноНДФЛ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УдержаноНДФЛКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="УдержаноНДФЛРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СуммаКВыплате" id="22">
+					<DataPath>Объект.СуммаКВыплате</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СуммаКВыплатеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СуммаКВыплатеРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="OnChange">ТабличныеЗначенияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РасчетнаяВедомость</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
